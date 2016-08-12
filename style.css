@@ -1,0 +1,277 @@
+
+html {min-height: 100%;}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {background: #CCD8E0 url(img/components/pattern.png) ;}
+
+li {list-style: none;}
+
+h1, h2, p, .sidenav ul li a, table, .footer_inner, .blogtext .blogtop p,
+.blogtext .blogbottom p {
+	font-family:Verdana, Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.fade {
+opacity: 1;
+/* Firefox */
+-moz-transition-property: opacity;
+-moz-transition-duration: .3s;
+-moz-transition-delay: 0s;
+/* WebKit */
+-webkit-transition-property: opacity;
+-webkit-transition-duration: .3s;
+-webkit-transition-delay: 0s;
+/* Opera */
+-o-transition-property: opacity;
+-o-transition-duration: .3s;
+-o-transition-delay: 0s;
+
+transition-property: opacity;
+transition-duration: .3s;
+transition-delay: 0s;
+}
+ 
+.fade:hover {
+opacity: .5;
+}
+
+/* misc */
+.clearer {clear: both;}
+
+/* structure */
+.container {
+	margin: 0 auto;
+	width: 950px;
+}
+
+/* header */
+.top {
+	background: url(img/components/top.png) repeat-x;
+	padding: 50px 0 0 0;
+}
+
+.headcircle{
+	float:left;
+	width: 115px;
+	height:115px;
+	border-radius: 50%;
+	overflow:hidden;
+}
+.inner{
+	background-image: url(img/data/Headportrait.jpg);
+	background-size:cover;
+	background-position:0 center;
+	height: 100%;
+}
+
+/* title */
+.header {
+	height: 150px;
+	margin: 0 auto;
+	padding: 10px 0 5px 0;
+	width: 950px;
+}
+
+.headtitle{
+	float:left;
+	margin:25px 0 0 25px;													
+}
+
+.headtitle h1{
+	font-style: normal;
+	font-size:34px;
+	font-weight:100;
+	color:#3DC6F0;
+}
+
+.headtitle p{
+	font-size:16px;
+	color:#7A7A7A;
+}
+
+/* sub navigation */
+.sidenav {
+	float: right;
+	width: 280px;
+}
+.sidenav h2 {
+	background: url(img/components/sidenavh2.png) no-repeat;
+	color: #7A7A7A;
+	font-size: 18px;
+	font-weight:100;
+	line-height: 24px;
+	padding-left: 12px;
+}
+.sidenav ul {
+	padding-bottom: 40px;
+}
+.sidenav li {height:30px;}
+.sidenav li a {
+	font-size: 14px;
+	color: #7A7A7A;
+	display: block;
+	padding: 6px 0 0 4%;
+	text-decoration: none;
+	width: 95%;
+	opacity: 1;
+	/* Firefox */
+	-moz-transition-property: opacity;
+	-moz-transition-duration: .3s;
+	-moz-transition-delay: 0s;
+	/* WebKit */
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-delay: 0s;
+	/* Opera */
+	-o-transition-property: opacity;
+	-o-transition-duration: .3s;
+	-o-transition-delay: 0s;
+	
+	transition-property: opacity;
+	transition-duration: .3s;
+	transition-delay: 0s;
+}
+.sidenav li a:hover {
+	opacity: .5;
+}
+
+/* content */
+.content {
+	float: left;
+	padding-right:16px;
+	width: 630px;
+}
+
+/* blog(圖+文字)
+------------------------------------------------------------ */
+.blog{
+	margin:10px 0;
+	height:225px;
+	width:100%;
+	display:flex;
+	justify-content:flex-start;	
+}
+.blogimg{
+	height:100%;
+	width:300px;
+	overflow:hidden;
+}
+
+.blogtext{
+	height:100%;
+	width:330px;
+}
+
+.blogtop{
+	overflow:hidden;
+	height:170px;
+}
+.blogbottom{
+	height:55px;
+}
+
+.blogtext h2{
+	position:relative;
+	top:13px;
+	background: url(img/components/blogtitleFront.png);
+	padding-left:20px;
+	font-size:24px;
+	font-weight:normal;
+	color:#3DC6F0;
+}
+.blogtext p{
+	position:relative;
+	top:17px;
+	padding-left:20px;
+	font-size:16px;
+	font-weight:100;
+	color:#7A7A7A;
+}
+.blogtop p{
+	width:300px;
+}
+.blogbottom p{
+	color:#9C9C9C;
+	font-size:14px;
+}
+.blogtop a{
+	text-decoration: none;
+}
+/* End of blog(圖+文字)
+------------------------------------------------------------ */
+
+/* Calendar(Plugin)
+------------------------------------------------------------ */
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	color:#7b7b7b;
+}
+
+table.calender caption a,
+table.calender td a {
+    text-decoration: none;
+    color: #3dc5f0;
+}
+
+
+
+.calender {
+	margin: 0;
+	padding: 0;
+	background: none;
+	margin: 0 auto;
+}
+
+.calender caption {
+	margin-bottom: 10px;
+	margin: 0px auto;
+	font-size:14px;
+}
+
+.calender tr + tr {
+	border-top: 1px dotted #ccc;
+}
+
+.calender th,
+.calender td {
+	text-align: center;
+	font-size: 15px;
+	padding: 6px 10px;
+}
+
+.calender td a {
+	display: block;
+	font-size: 14px;
+}
+
+.calender th#sun {
+	color: #f76f6f;
+}
+
+.calender th#sat {
+	color: #5757F1;
+}
+/* End of Calendar(Plugin)
+------------------------------------------------------------ */
+
+/* footer 
+------------------------------------------------------------ */
+.footer {
+	margin-top: 30px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:160px;
+	border-top:1px solid #CCCCCC;
+	text-align: center;
+}
+.footer_inner{
+	color:#7A7A7A;
+}
+/* End of footer 
+------------------------------------------------------------ */
