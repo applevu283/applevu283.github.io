@@ -6,7 +6,7 @@ html {min-height: 100%;}
 	padding: 0;
 }
 
-body {background: #CCD8E0 url(img/components/pattern.png) ;}
+body {background: #CCD8E0 url(images/components/pattern.png) ;}
 
 li {list-style: none;}
 
@@ -50,7 +50,7 @@ opacity: .5;
 
 /* header */
 .top {
-	background: url(img/components/top.png) repeat-x;
+	background: url(images/components/top.png) repeat-x;
 	padding: 50px 0 0 0;
 }
 
@@ -62,7 +62,7 @@ opacity: .5;
 	overflow:hidden;
 }
 .inner{
-	background-image: url(img/data/Headportrait.jpg);
+	background-image: url(images/data/Headportrait.jpg);
 	background-size:cover;
 	background-position:0 center;
 	height: 100%;
@@ -99,7 +99,7 @@ opacity: .5;
 	width: 280px;
 }
 .sidenav h2 {
-	background: url(img/components/sidenavh2.png) no-repeat;
+	background: url(images/components/sidenavh2.png) no-repeat;
 	color: #7A7A7A;
 	font-size: 18px;
 	font-weight:100;
@@ -177,7 +177,7 @@ opacity: .5;
 .blogtext h2{
 	position:relative;
 	top:13px;
-	background: url(img/components/blogtitleFront.png);
+	background: url(images/components/blogtitleFront.png);
 	padding-left:20px;
 	font-size:24px;
 	font-weight:normal;
